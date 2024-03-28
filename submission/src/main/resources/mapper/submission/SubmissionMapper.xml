@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.submission.mapper.SubmissionMapper">
+    <resultMap type="Submission" id="SubmissionResult">
+        <result property="submitid" column="submitId"/>
+        <result property="submittime" column="submitTime"/>
+        <result property="verdict" column="verdict"/>
+        <result property="programminglanguage" column="programmingLanguage"/>
+        <result property="memoryconsumed" column="memoryConsumed"/>
+        <result property="author" column="author"/>
+        <result property="userscore" column="userScore"/>
+        <result property="problemweb" column="problemWeb"/>
+        <result property="problemname" column="problemName"/>
+    </resultMap>
+
+    <sql id="selectSubmissionVo">
+        select submitId,
+               submitTime,
+               verdict,
+               programmingLanguage,
+               memoryConsumed,
+               author,
+               userScore,
+               problemWeb,
+               problemName
+        from submission
+    </sql>
+
+    <select id="selectSubmissionList" parameterType="Submission" resultMap="SubmissionResult">
+        <include refid="selectSubmissionVo"/>
+        <where>
+            <if test="submittime != null">
+                and submitTime = #{submittime}
+            </if>
+            <if test="verdict != null  and verdict != ''">
+                and verdict = #{verdict}
+            </if>
+            <if test="author != null  and author != ''">
+                and author like concat('%', #{author}, '%')
+            </if>
+            <if test="userscore != null  and userscore != ''">
+                and userScore like concat('%', #{userscore}, '%')
+            </if>
+            <if test="problemname != null  and problemname != ''">
+                and problemName like concat('%', #{problemname}, '%')
+            </if>
+        </where>
+        order by submitTime desc
+    </select>
+
+    <select id="selectSubmissionBySubmitid" parameterType="String" resultMap="SubmissionResult">
+        <include refid="selectSubmissionVo"/>
+        where submitId = #{submitid}
+    </select>
+
+    <insert id="insertSubmission" parameterType="Submission">
+        insert into submission
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="submitid != null">
+                submitId,
+            </if>
+            <if test="submittime != null">
+                submitTime,
+            </if>
+            <if test="verdict != null and verdict != ''">
+                verdict,
+            </if>
+            <if test="programminglanguage != null and programminglanguage != ''">
+                programmingLanguage,
+            </if>
+            <if test="memoryconsumed != null">
+                memoryConsumed,
+            </if>
+            <if test="author != null and author != ''">
+                author,
+            </if>
+            <if test="userscore != null and userscore != ''">
+                userScore,
+            </if>
+            <if test="problemweb != null and problemweb != ''">
+                problemWeb,
+            </if>
+            <if test="problemname != null and problemname != ''">
+                problemName,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="submitid != null">
+                #{submitid},
+            </if>
+            <if test="submittime != null">
+                #{submittime},
+            </if>
+            <if test="verdict != null and verdict != ''">
+                #{verdict},
+            </if>
+            <if test="programminglanguage != null and programminglanguage != ''">
+                #{programminglanguage},
+            </if>
+            <if test="memoryconsumed != null">
+                #{memoryconsumed},
+            </if>
+            <if test="author != null and author != ''">
+                #{author},
+            </if>
+            <if test="userscore != null and userscore != ''">
+                #{userscore},
+            </if>
+            <if test="problemweb != null and problemweb != ''">
+                #{problemweb},
+            </if>
+            <if test="problemname != null and problemname != ''">
+                #{problemname},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="updateSubmission" parameterType="Submission">
+        update submission
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="submittime != null">
+                submitTime = #{submittime},
+            </if>
+            <if test="verdict != null and verdict != ''">
+                verdict = #{verdict},
+            </if>
+            <if test="programminglanguage != null and programminglanguage != ''">
+                programmingLanguage = #{programminglanguage},
+            </if>
+            <if test="memoryconsumed != null">
+                memoryConsumed = #{memoryconsumed},
+            </if>
+            <if test="author != null and author != ''">
+                author = #{author},
+            </if>
+            <if test="userscore != null and userscore != ''">
+                userScore = #{userscore},
+            </if>
+            <if test="problemweb != null and problemweb != ''">
+                problemWeb = #{problemweb},
+            </if>
+            <if test="problemname != null and problemname != ''">
+                problemName = #{problemname},
+            </if>
+        </trim>
+        where submitId = #{submitid}
+    </update>
+
+    <delete id="deleteSubmissionBySubmitid" parameterType="String">
+        delete
+        from submission
+        where submitId = #{submitid}
+    </delete>
+
+    <delete id="deleteSubmissionBySubmitids" parameterType="String">
+        delete
+        from submission where submitId in
+        <foreach item="submitid" collection="array" open="(" separator="," close=")">
+            #{submitid}
+        </foreach>
+    </delete>
+</mapper>

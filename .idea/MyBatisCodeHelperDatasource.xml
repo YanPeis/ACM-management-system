@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="generatedClassPathList">
+          <list>
+            <option value="D:\同步空间\code\java\项目\acm-springboot\ojSpider\src\main\java\com\ruoyi\pojo" />
+          </list>
+        </option>
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

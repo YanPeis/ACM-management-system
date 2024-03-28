@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/certificates/target/maven-archiver/maven-archiver (1).iml" filepath="$PROJECT_DIR$/certificates/target/maven-archiver/maven-archiver (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/submission/target/maven-archiver/maven-archiver (10).iml" filepath="$PROJECT_DIR$/submission/target/maven-archiver/maven-archiver (10).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ojAccount/target/maven-archiver/maven-archiver (2).iml" filepath="$PROJECT_DIR$/ojAccount/target/maven-archiver/maven-archiver (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ojSpider/target/maven-archiver/maven-archiver (3).iml" filepath="$PROJECT_DIR$/ojSpider/target/maven-archiver/maven-archiver (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ruoyi-admin/target/maven-archiver/maven-archiver (4).iml" filepath="$PROJECT_DIR$/ruoyi-admin/target/maven-archiver/maven-archiver (4).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ruoyi-common/target/maven-archiver/maven-archiver (5).iml" filepath="$PROJECT_DIR$/ruoyi-common/target/maven-archiver/maven-archiver (5).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ruoyi-framework/target/maven-archiver/maven-archiver (6).iml" filepath="$PROJECT_DIR$/ruoyi-framework/target/maven-archiver/maven-archiver (6).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ruoyi-generator/target/maven-archiver/maven-archiver (7).iml" filepath="$PROJECT_DIR$/ruoyi-generator/target/maven-archiver/maven-archiver (7).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ruoyi-quartz/target/maven-archiver/maven-archiver (8).iml" filepath="$PROJECT_DIR$/ruoyi-quartz/target/maven-archiver/maven-archiver (8).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ruoyi-system/target/maven-archiver/maven-archiver (9).iml" filepath="$PROJECT_DIR$/ruoyi-system/target/maven-archiver/maven-archiver (9).iml" />
+    </modules>
+  </component>
+</project>

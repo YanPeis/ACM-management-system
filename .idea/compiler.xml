@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ruoyi-system" />
+        <module name="ojAccount" />
+        <module name="ruoyi-generator" />
+        <module name="maven-archiver (8)" />
+        <module name="maven-archiver (9)" />
+        <module name="maven-archiver (6)" />
+        <module name="maven-archiver (7)" />
+        <module name="maven-archiver (4)" />
+        <module name="maven-archiver (5)" />
+        <module name="maven-archiver (2)" />
+        <module name="ruoyi-framework" />
+        <module name="maven-archiver (3)" />
+        <module name="maven-archiver (1)" />
+        <module name="ojSpider" />
+        <module name="certificates" />
+        <module name="maven-archiver (10)" />
+        <module name="ruoyi-common" />
+        <module name="submission" />
+        <module name="ruoyi-quartz" />
+        <module name="ruoyi-admin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="acmJsoup" target="1.8" />
+      <module name="maven-archiver (1)" target="1.8" />
+      <module name="maven-archiver (10)" target="1.8" />
+      <module name="maven-archiver (2)" target="1.8" />
+      <module name="maven-archiver (3)" target="1.8" />
+      <module name="maven-archiver (4)" target="1.8" />
+      <module name="maven-archiver (5)" target="1.8" />
+      <module name="maven-archiver (6)" target="1.8" />
+      <module name="maven-archiver (7)" target="1.8" />
+      <module name="maven-archiver (8)" target="1.8" />
+      <module name="maven-archiver (9)" target="1.8" />
+      <module name="ruoyi-biz" target="1.8" />
+      <module name="ruoyi-data-rule" target="1.8" />
+      <module name="ruoyi-oss" target="1.8" />
+      <module name="ruoyi-tenant" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

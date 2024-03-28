@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="abb60f97-2ea5-459b-9bea-2830b946712e" name="变更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ruoyi-ui/src/views/system/user/index.vue" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="localRepository" value="C:\Users\13477\.m2\repository" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="C:\Users\13477\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="26S15fcIf1WupCC4I9SPsGHR5XY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindow构建.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../algorithm" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="ts.external.directory.path" value="C:\Users\13477\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\213.6777.52\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="debugInitializationType" value="HOOKS" />
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\同步空间\code\java\项目\acm-springboot\ruoyi-ui\src\assets\images" />
+      <recent name="D:\同步空间\code\java\项目\acm-springboot\submission\src\main" />
+      <recent name="D:\同步空间\code\java\项目\acm-springboot\submission\src" />
+      <recent name="D:\同步空间\code\java\项目\acm-springboot\ruoyi-ui\src" />
+      <recent name="D:\同步空间\code\java\项目\acm-springboot\ruoyi-ui\src\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\同步空间\code\java\项目\acm-springboot\ruoyi-ui\src" />
+      <recent name="D:\同步空间\code\java\项目\acm-springboot\ojSpider\src\main\java\com\ruoyi\pojo\entity" />
+      <recent name="D:\同步空间\code\java\项目\acm-springboot\ruoyi-ui\src\views\certificatesUser" />
+      <recent name="D:\同步空间\code\java\项目\acm-springboot\certificates\src\main" />
+      <recent name="D:\同步空间\code\java\项目\acm-springboot\ruoyi-admin\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.RuoYiApplication">
+    <configuration name="CodeforecesSpider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ruoyi.util.CodeforecesSpider" />
+      <module name="ojSpider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruoyi.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsoupTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ruoyi.util.JsoupTest" />
+      <module name="acmJsoup" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruoyi.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RyTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ruoyi.quartz.task.RyTask" />
+      <module name="ruoyi-quartz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruoyi.quartz.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VjudgeSpider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ruoyi.util.VjudgeSpider" />
+      <module name="ojSpider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruoyi.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ruoyi-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruoyi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.RuoYiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.RuoYiApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\13477\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="abb60f97-2ea5-459b-9bea-2830b946712e" name="变更" comment="" />
+      <created>1647402002517</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647402002517</updated>
+      <workItem from="1647402009795" duration="2627000" />
+      <workItem from="1647410169098" duration="10620000" />
+      <workItem from="1647487433333" duration="221000" />
+      <workItem from="1647489127789" duration="141000" />
+      <workItem from="1647606180127" duration="5001000" />
+      <workItem from="1647685834485" duration="4000" />
+      <workItem from="1647685999809" duration="17000" />
+      <workItem from="1647692995541" duration="235000" />
+      <workItem from="1647693270144" duration="1734000" />
+      <workItem from="1647861492409" duration="53000" />
+      <workItem from="1647875046361" duration="34000" />
+      <workItem from="1648558343444" duration="748000" />
+      <workItem from="1648559133090" duration="11696000" />
+      <workItem from="1648573024268" duration="4629000" />
+      <workItem from="1648602957064" duration="8101000" />
+      <workItem from="1648640336352" duration="4916000" />
+      <workItem from="1648734966274" duration="1750000" />
+      <workItem from="1648747379934" duration="804000" />
+      <workItem from="1648773413478" duration="145000" />
+      <workItem from="1648901431147" duration="1556000" />
+      <workItem from="1648903112240" duration="64000" />
+      <workItem from="1648903201274" duration="71000" />
+      <workItem from="1648903411104" duration="35000" />
+      <workItem from="1648903622522" duration="463000" />
+      <workItem from="1648904236648" duration="89000" />
+      <workItem from="1648904396464" duration="97000" />
+      <workItem from="1648904712596" duration="274000" />
+      <workItem from="1648905028720" duration="24000" />
+      <workItem from="1648905111334" duration="1000" />
+      <workItem from="1648905246418" duration="17838000" />
+      <workItem from="1648960657591" duration="11070000" />
+      <workItem from="1648990703004" duration="1637000" />
+      <workItem from="1649077787074" duration="1493000" />
+      <workItem from="1649156475456" duration="40000" />
+      <workItem from="1649156552106" duration="405000" />
+      <workItem from="1649157010440" duration="136000" />
+      <workItem from="1649244360882" duration="602000" />
+      <workItem from="1649245022079" duration="5000" />
+      <workItem from="1649245091177" duration="568000" />
+      <workItem from="1649245706168" duration="24000" />
+      <workItem from="1649245753903" duration="34000" />
+      <workItem from="1649252660257" duration="168000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

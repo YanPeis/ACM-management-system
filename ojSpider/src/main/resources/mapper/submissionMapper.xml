@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.submissionMapper">
+
+    <resultMap id="BaseResultMap" type="com.ruoyi.submission.domain.submission">
+            <id property="submitid" column="submitId" jdbcType="VARCHAR"/>
+            <result property="submittime" column="submitTime" jdbcType="TIMESTAMP"/>
+            <result property="verdict" column="verdict" jdbcType="VARCHAR"/>
+            <result property="programminglanguage" column="programmingLanguage" jdbcType="VARCHAR"/>
+            <result property="memoryconsumed" column="memoryConsumed" jdbcType="INTEGER"/>
+            <result property="author" column="author" jdbcType="VARCHAR"/>
+            <result property="userscore" column="userScore" jdbcType="VARCHAR"/>
+            <result property="problemweb" column="problemWeb" jdbcType="VARCHAR"/>
+            <result property="problemname" column="problemName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        submitId,submitTime,verdict,
+        programmingLanguage,memoryConsumed,author,
+        userScore,problemWeb,problemName
+    </sql>
+</mapper>

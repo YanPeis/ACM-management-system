@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.certificates.mapper.CertificatesMapper">
+    
+    <resultMap type="Certificates" id="CertificatesResult">
+        <result property="certificatesId"    column="certificates_id"    />
+        <result property="certificatesOwnerName"    column="certificates_owner_name"    />
+        <result property="certificatesOwnerScore"    column="certificates_owner_score"    />
+        <result property="certificatesName"    column="certificates_name"    />
+        <result property="certificatesPath"    column="certificates_path"    />
+    </resultMap>
+
+    <sql id="selectCertificatesVo">
+        select certificates_id, certificates_owner_name, certificates_owner_score, certificates_name, certificates_path from certificates
+    </sql>
+
+    <select id="selectCertificatesList" parameterType="Certificates" resultMap="CertificatesResult">
+        <include refid="selectCertificatesVo"/>
+        <where>  
+            <if test="certificatesOwnerName != null  and certificatesOwnerName != ''"> and certificates_owner_name like concat('%', #{certificatesOwnerName}, '%')</if>
+            <if test="certificatesOwnerScore != null  and certificatesOwnerScore != ''"> and certificates_owner_score = #{certificatesOwnerScore}</if>
+            <if test="certificatesName != null  and certificatesName != ''"> and certificates_name like concat('%', #{certificatesName}, '%')</if>
+            <if test="certificatesPath != null  and certificatesPath != ''"> and certificates_path = #{certificatesPath}</if>
+        </where>
+    </select>
+    
+    <select id="selectCertificatesByCertificatesId" parameterType="Long" resultMap="CertificatesResult">
+        <include refid="selectCertificatesVo"/>
+        where certificates_id = #{certificatesId}
+    </select>
+        
+    <insert id="insertCertificates" parameterType="Certificates" useGeneratedKeys="true" keyProperty="certificatesId">
+        insert into certificates
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="certificatesOwnerName != null and certificatesOwnerName != ''">certificates_owner_name,</if>
+            <if test="certificatesOwnerScore != null and certificatesOwnerScore != ''">certificates_owner_score,</if>
+            <if test="certificatesName != null and certificatesName != ''">certificates_name,</if>
+            <if test="certificatesPath != null and certificatesPath != ''">certificates_path,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="certificatesOwnerName != null and certificatesOwnerName != ''">#{certificatesOwnerName},</if>
+            <if test="certificatesOwnerScore != null and certificatesOwnerScore != ''">#{certificatesOwnerScore},</if>
+            <if test="certificatesName != null and certificatesName != ''">#{certificatesName},</if>
+            <if test="certificatesPath != null and certificatesPath != ''">#{certificatesPath},</if>
+         </trim>
+    </insert>
+
+    <update id="updateCertificates" parameterType="Certificates">
+        update certificates
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="certificatesOwnerName != null and certificatesOwnerName != ''">certificates_owner_name = #{certificatesOwnerName},</if>
+            <if test="certificatesOwnerScore != null and certificatesOwnerScore != ''">certificates_owner_score = #{certificatesOwnerScore},</if>
+            <if test="certificatesName != null and certificatesName != ''">certificates_name = #{certificatesName},</if>
+            <if test="certificatesPath != null and certificatesPath != ''">certificates_path = #{certificatesPath},</if>
+        </trim>
+        where certificates_id = #{certificatesId}
+    </update>
+
+    <delete id="deleteCertificatesByCertificatesId" parameterType="Long">
+        delete from certificates where certificates_id = #{certificatesId}
+    </delete>
+
+    <delete id="deleteCertificatesByCertificatesIds" parameterType="String">
+        delete from certificates where certificates_id in 
+        <foreach item="certificatesId" collection="array" open="(" separator="," close=")">
+            #{certificatesId}
+        </foreach>
+    </delete>
+</mapper>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.ojAccount.mapper.OjAccountMapper">
+    
+    <resultMap type="OjAccount" id="OjAccountResult">
+        <result property="userscore"    column="userScore"    />
+        <result property="codeforceusername"    column="codeforceUsername"    />
+        <result property="vjudgeusername"    column="vjudgeUsername"    />
+    </resultMap>
+
+    <sql id="selectOjAccountVo">
+        select userScore, codeforceUsername, vjudgeUsername from ojAccount
+    </sql>
+
+    <select id="selectOjAccountList" parameterType="OjAccount" resultMap="OjAccountResult">
+        <include refid="selectOjAccountVo"/>
+        <where>  
+            <if test="userscore != null  and userscore != ''"> and userScore = #{userscore}</if>
+            <if test="codeforceusername != null  and codeforceusername != ''"> and codeforceUsername like concat('%', #{codeforceusername}, '%')</if>
+            <if test="vjudgeusername != null  and vjudgeusername != ''"> and vjudgeUsername like concat('%', #{vjudgeusername}, '%')</if>
+        </where>
+    </select>
+    
+    <select id="selectOjAccountByUserscore" parameterType="String" resultMap="OjAccountResult">
+        <include refid="selectOjAccountVo"/>
+        where userScore = #{userscore}
+    </select>
+        
+    <insert id="insertOjAccount" parameterType="OjAccount">
+        insert into ojAccount
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userscore != null">userScore,</if>
+            <if test="codeforceusername != null and codeforceusername != ''">codeforceUsername,</if>
+            <if test="vjudgeusername != null and vjudgeusername != ''">vjudgeUsername,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userscore != null">#{userscore},</if>
+            <if test="codeforceusername != null and codeforceusername != ''">#{codeforceusername},</if>
+            <if test="vjudgeusername != null and vjudgeusername != ''">#{vjudgeusername},</if>
+         </trim>
+    </insert>
+
+    <update id="updateOjAccount" parameterType="OjAccount">
+        update ojAccount
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="codeforceusername != null and codeforceusername != ''">codeforceUsername = #{codeforceusername},</if>
+            <if test="vjudgeusername != null and vjudgeusername != ''">vjudgeUsername = #{vjudgeusername},</if>
+        </trim>
+        where userScore = #{userscore}
+    </update>
+
+    <delete id="deleteOjAccountByUserscore" parameterType="String">
+        delete from ojAccount where userScore = #{userscore}
+    </delete>
+
+    <delete id="deleteOjAccountByUserscores" parameterType="String">
+        delete from ojAccount where userScore in 
+        <foreach item="userscore" collection="array" open="(" separator="," close=")">
+            #{userscore}
+        </foreach>
+    </delete>
+</mapper>
